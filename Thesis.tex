@@ -1,0 +1,135 @@
+% figures in chp.tex files need to have paths relative to main.tex
+\documentclass[a4paper]{report}
+
+\usepackage{a4}
+\usepackage{epsfig}
+\usepackage{graphics,graphicx}
+\usepackage[lmargin=4cm,rmargin=2cm,tmargin=3.5cm,bmargin=3.5cm]{geometry}
+\usepackage{natbib}
+\bibpunct{(}{)}{;}{a}{,}{,}
+\usepackage{setspace}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+\usepackage{array}
+\usepackage{tabulary}
+\usepackage{txfonts}
+\usepackage{upgreek}
+\usepackage{subfig}
+\usepackage{float}
+\usepackage{longtable}
+  \newtheorem{lem}{Lemma}
+  \newtheorem{thm}{Theorem}
+%\usepackage{lineno}
+%\setcounter{page}{1}
+
+%\pagenumbering{arabic}
+
+\usepackage{fancyhdr}
+
+\newcommand{\rr}{\raggedright}
+\newcommand{\tn}{\tabularnewline}
+\newtheorem{mydef}{Definition}
+
+\begin{document}
+
+\pagestyle{fancy}
+\renewcommand{\chaptermark}[1]{%
+\markboth{\MakeUppercase{%
+\chaptername\ \thechapter.%
+\ #1}}{}}
+\fancyhead{}
+%\fancyfoot{}
+\fancyhead[R]{\leftmark}
+
+%\setpagewiselinenumbers
+
+\input{titlepage.tex}
+
+\newpage
+
+\vspace*{\fill}
+
+\begin{centering}
+
+\textit{I, Stuart Nattrass, confirm that the work presented in this thesis is my own. Where information has been derived from other sources, I confirm that this has been indicated in the thesis.}
+
+\end{centering}
+
+\vspace*{\fill}
+
+
+\newpage
+
+%\newpage
+
+
+%\vspace*{\fill}
+
+%\begin{verse}
+%\textit{``Confusion is sex''}\end{verse}\begin{flushright}
+%Sonic Youth
+%\end{flushright}
+
+%\vspace*{\fill}
+
+\newpage
+
+%\pagenumbering{arabic}
+
+\doublespacing
+
+\chapter*{Acknowledgements}
+
+Thanks to my supervisors, David Murrell and Stephen Baigent, for their guidance, ideas, and inspiration. They have made this entire process an enjoyable one. I have learnt a great deal from both of you, and I am incredibly grateful for everything.
+
+To those who have shared an office, or drinks, with me, thank you for teaching a mathematician biology, and keeping me entertained along the way. Special mentions to Lawrence Bellamy and Aaron Towlson, for welcoming me into the department with pints and open arms, Fraser Murdoch and Claire Asher for keeping the nights out silly, Kate Brown, Pascale Gerbault, and latterly Henry Ferguson-Gow, Tim Lucas and the rest of the Kate Jones group, with whom I shared an office all too briefly. And Jane Dempster, lovely Wo-Ho mum.
+
+Thanks also to my non-science friends, for reminding me that there is a whole world out there.
+
+Finally thanks to Mam and Dad, for putting up with my refusal to stop being a student every step of the way. 
+
+\chapter*{Abstract}
+
+
+\tableofcontents
+\listoffigures
+\listoftables
+
+%\pagenumbering{arabic}
+
+%\linenumbers
+\chapter*{Introduction}
+\include{Introduction}
+
+\newpage
+\chapter{Quantifying the probability of coexistence in communities with asymmetric competition}
+This work was previously published in Bulletin of Mathematical Biology (Nattrass et al 2012)
+\input{C1Asymmetry}
+
+\newpage
+\chapter{The effect of disturbance intensity and frequency on coexistence via a fecundity-growth trade-off}
+\input{C2Disturbance}
+
+\newpage
+\chapter{Which trade-off contributes most to biodiversity? A comparison of trade-off models}
+\input{C3Comparison}
+
+\newpage
+\chapter{Multi-species coexistence: the effects of disturbance refugia on species richness}
+\input{C4Patch}
+
+
+\newpage
+\chapter*{General Conclusion}
+\input{Conc}
+
+
+\pagebreak
+
+
+
+
+
+\end{document}
