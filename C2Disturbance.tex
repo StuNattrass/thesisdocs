@@ -250,7 +250,7 @@ to determine the vector $\mathbf{k}$ of expected extinction time for each possib
  \label{fig:tte}
 \end{figure}
 
-We can also find the expected time to convergence (be that extinction or an internal quasi-equilibrium) by examining the eigenvalues of the transition matrix. The two absorbing boundaries mean that this matrix is reducible, with two eigenvalues $\lambda_{1,2}=1$, so the dynamics away from these boundaries are determined by $\lambda_3$, \textbf{the largest eigenvalue with $\lambda \neq 1$. The convergence to either the boundary or the quasi-equilibrium happens with rate $\lambda_3^t$. Figure\ref{fig:tte} shows numerically generated $\lambda_3$ for varied $x \in \{0.01,0.035,0.06\}$ above, below and within the non-disturbed coexistence region. In all cases, $\lambda^3$ increases monotonically with $N$. This indicates} that time to convergence increases with system size. When $x \not\in (x_{min},x_{max})$, this extends the time to extinction, allowing for less frequent disturbances to sustain both populations.
+We can also find the expected time to convergence (be that extinction or an internal quasi-equilibrium) by examining the eigenvalues of the transition matrix. The two absorbing boundaries mean that this matrix is reducible, with two eigenvalues $\lambda_{1,2}=1$, so the dynamics away from these boundaries are determined by $\lambda_3$, \textbf{the largest eigenvalue with $\lambda \neq 1$. The convergence to either the boundary or the quasi-equilibrium happens with rate $\lambda_3^t$. Figure~\ref{fig:tte} shows numerically generated $\lambda_3$ for varied $x \in \{0.01,0.035,0.06\}$ above, below and within the non-disturbed coexistence region. In all cases, $\lambda^3$ increases monotonically with $N$. This indicates} that time to convergence increases with system size. When $x \not\in (x_{min},x_{max})$, this extends the time to extinction, allowing for less frequent disturbances to sustain both populations.
 
 
 
@@ -295,7 +295,8 @@ When not all individuals are reproductively active ($p<1$), the average change a
 \label{acd1}
 &AvChangeDist(1)=-I \\ 
 &+ (1-I)p \notag \\
-& \times \sum_{k=0}^{N-2} k \sum_{j=k}^{N-2} I^j(1-I)^{N-2-j}{N-2\choose j} \sum_{r_2=0}^{N-1j}\\&\left( p^{r_2}(1-p)^{N-1-j-r_2} {N-1-j\choose r_2}\left( \frac{s_1 e^{-s_2xr_2/N}}{s_1+s_2r_2}\right)^k \left(1- \frac{s_1 e^{-s_2xr_2/N}}{s_1+s_2r_2}\right)^{j-k}{j\choose k} \right) \notag \\
+& \times \sum_{k=0}^{N-2} k \sum_{j=k}^{N-2} I^j(1-I)^{N-2-j}{N-2\choose j} \sum_{r_2=0}^{N-1j} \notag \\
+&\left( p^{r_2}(1-p)^{N-1-j-r_2} {N-1-j\choose r_2}\left( \frac{s_1 e^{-s_2xr_2/N}}{s_1+s_2r_2}\right)^k \left(1- \frac{s_1 e^{-s_2xr_2/N}}{s_1+s_2r_2}\right)^{j-k}{j\choose k} \right) \notag \\
 &+(N-1)I^{N-1}(1-I) \notag
 \end{align}
 and
@@ -310,7 +311,7 @@ However, these are computationally expensive, where the number of terms in the t
 \begin{align}
 & AvChangeDistApprox(1)=-I \\
 &+(1-I)p \notag \\
-&\sum_{k=1}^{N-2} k \int_k^{N-2}dj \mathcal{N}\left(I(N-2),I(N-2)(1-I),j\right) \int_0^{N-1-j}dr_2 \mathcal{N}\left(p(N-1-j),p(1-p)(N-1-j),r_2\right) \notag \\
+&\sum_{k=1}^{N-2} k \int_k^{N-2}dj\quad \mathcal{N}\left(I(N-2),I(N-2)(1-I),j\right) \int_0^{N-1-j}dr_2\quad \mathcal{N}\left(p(N-1-j),p(1-p)(N-1-j),r_2\right) \notag \\
 &\times \mathcal{N}\left(j\frac{s_1 e^{-s_2xr_2/N}}{s_1+s_2r_2},j\frac{s_1 e^{-s_2xr_2/N}}{s_1+s_2r_2}\left(1-\frac{s_1 e^{-s_2xr_2/N}}{s_1+s_2r_2}\right),k \right)\notag \\
  &+(N-1)I^{N-1}(1-I)\notag
 \end{align}
@@ -318,7 +319,7 @@ at the lower boundary and
 \begin{align}
 & AvChangeDistApprox(N-1)=-(N-1)I^{N-1}\\
 & - (1-I)p \notag \\
-& \sum_{k=1}^{N-2}k \int_k^{N-2}dj \mathcal{N}(I(N-2),I(1-I)(N-2),j)\int_0^{N-1-j}dr_1 \mathcal{N}(p(N-1-j),p(1-p)(N-1-j),r_1) \notag \\
+& \sum_{k=1}^{N-2}k \int_k^{N-2}dj\quad \mathcal{N}(I(N-2),I(1-I)(N-2),j)\int_0^{N-1-j}dr_1\quad \mathcal{N}(p(N-1-j),p(1-p)(N-1-j),r_1) \notag \\
 & \times \mathcal{N}\left(j\left(1-\frac{s_1r_1 e^{-s_2x/N}}{s_2+s_1r_1}\right),j\frac{s_1r_1 e^{-s_2x/N}}{s_2+s_1r_1}\left(1-\frac{s_1r_1 e^{-s_2x/N}}{s_2+s_1r_1}\right)\right) \notag \\
 &+I(1-I^{N-1})\notag \end{align}
 at the upper boundary, where $\mathcal{N}(x,y,z)$ is the PDF of a normal distribution with mean $\mu=x$ and variance $\sigma^2=y$, analysed over the variable $z$.
