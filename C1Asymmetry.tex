@@ -1,18 +1,21 @@
-
-\begin{abstract}
+\newpage
+\topskip0pt
+\vspace*{\fill}
+\section*{Abstract}
 Trade-offs in performance of different ecological functions within a species are  commonly offered as an explanation for coexistence in natural communities. Single trade-offs between competitive ability and other life history traits have been shown to support a large number of species, as a result of strong competitive asymmetry. We consider a single competition-fecundity trade-off in a homogeneous environment, and examine the effect of the form of asymmetry on the likelihood of species coexisting. We find conditions that allow coexistence of two species for a general competition function, and show that (1) two species can only coexist if the competition function is sufficiently steep when the species are similar; (2) when competition is determined by a linear function, no more than two species can coexist; (3) when the competition between two individuals is determined by a discontinuous step function, this single trade-off can support an arbitrarily large number of species. Further, we show analytically that as the degree of asymmetry in competition increases, the probability of a given number of species coexisting also increases, but note that even in the most favourable conditions, large numbers of species coexisting along a single trade-off is highly unlikely. On this basis we suggest it is unlikely that single trade-offs are able to support high levels of biodiversity without interacting other processes.
-\end{abstract}
+\vspace*{\fill}
+\newpage
 
 \section{Introduction}
 
 
-There is no such thing in the natural world as a Darwinian Demon which maximises all possible life history traits \cite{law1979optimal}, and instead individuals have to allocate resources to one life-history trait at the expense of others. This results in trade-offs between life history traits, so that, for example, a plant species which allocates resource to rapid growth does so at the expense of its ability to withstand shading; or a species that has allocated much of the available resource to out-competing other species will suffer a decrease in its ability to disperse and colonise empty areas of the environment (e.g. \cite{tilman1994competition, cadotte2006testing}). Other classic life-history trade-offs include the offspring size-number trade-off (e.g. \cite{venable1992size}); the trade-offs between pathogen resistance and fecundity (e.g. \cite{bowers1994life}); and competition and intra-guild predation \cite{amarasekare2007trade}.
+There is no such thing in the natural world as a Darwinian Demon which maximises all possible life history traits \citep{law1979optimal}, and instead individuals have to allocate resources to one life-history trait at the expense of others. This results in trade-offs between life history traits, so that, for example, a plant species which allocates resource to rapid growth does so at the expense of its ability to withstand shading; or a species that has allocated much of the available resource to out-competing other species will suffer a decrease in its ability to disperse and colonise empty areas of the environment  \citep[e.g.][]{tilman1994competition, cadotte2006testing}. Other classic life-history trade-offs include the offspring size-number trade-off \citep[e.g.][]{venable1992size}; the trade-offs between pathogen resistance and fecundity \citep[e.g.][]{bowers1994life}; and competition and intra-guild predation \citep{amarasekare2007trade}.
 
-Theory has shown that these trade-offs can allow two or more species to coexist while competing for the same resources  (e.g. \cite{kisdi2003coexistence, levins1971regional, bonsall2004life} ), and consequently that trade-offs may be instrumental in the evolution of biodiversity \cite{schluter1995adaptive, white2005adaptive, bonsall2004life}. In particular, Levins and Culver \cite{levins1971regional} originally highlighted two such trade-offs, the competition-colonisation trade-off which has received much attention, and the trade-off between death rate and competitive ability which has received less attention. Levins and Culver argued that two species can coexist if one experiences a lower death rate, but is a weaker competitor than the other species. Both trade-offs are closely related, and have received much attention, with Tilman \cite{tilman1994competition} showing that the competition-colonisation trade-off can potentially lead to infinitely many species coexisting.
+Theory has shown that these trade-offs can allow two or more species to coexist while competing for the same resources  \citep[e.g.][]{kisdi2003coexistence, levins1971regional, bonsall2004life}, and consequently that trade-offs may be instrumental in the evolution of biodiversity \citep{schluter1995adaptive, white2005adaptive, bonsall2004life}. In particular, \cite{levins1971regional} originally highlighted two such trade-offs, the competition-colonisation trade-off which has received much attention, and the trade-off between death rate and competitive ability which has received less attention. Levins and Culver argued that two species can coexist if one experiences a lower death rate, but is a weaker competitor than the other species. Both trade-offs are closely related, and have received much attention, with \cite{tilman1994competition} showing that the competition-colonisation trade-off can potentially lead to infinitely many species coexisting.
 
-However, the conditions under which species either competitively exclude, or coexist alongside others due to trade-offs between competition and other life history traits might also be dependent on the existence, and level, of asymmetric competition between species \cite{adler2000space}. Competition is called asymmetric if an individual with larger trait value (e.g. size) is bestowed some benefit over small trait valued neighbours, winning more than 50\% of contests by virtue of this difference in trait. This competition is deemed to be very asymmetric if there is a large difference in competitive ability between individuals which have slightly different trait values. Asymmetric competition is widespread in the natural world, forming the majority of inter-species competition in insects \cite{lawton1981asymmetrical}; and is prevalent in plants where competition for light is expected to be size dependent, such that a larger plant may intercept nearly all the available light at the expense of a smaller individual \cite{weiner1990asymmetric}. However, there is relatively little theory that investigates how the strength of competitive asymmetry may affect the maintenance of biodiversity.
+However, the conditions under which species either competitively exclude, or coexist alongside others due to trade-offs between competition and other life history traits might also be dependent on the existence, and level, of asymmetric competition between species \citep{adler2000space}. Competition is called asymmetric if an individual with larger trait value (e.g. size) is bestowed some benefit over small trait valued neighbours, winning more than 50\% of contests by virtue of this difference in trait. This competition is deemed to be very asymmetric if there is a large difference in competitive ability between individuals which have slightly different trait values. Asymmetric competition is widespread in the natural world, forming the majority of inter-species competition in insects \citep{lawton1981asymmetrical}; and is prevalent in plants where competition for light is expected to be size dependent, such that a larger plant may intercept nearly all the available light at the expense of a smaller individual \citep{weiner1990asymmetric}. However, there is relatively little theory that investigates how the strength of competitive asymmetry may affect the maintenance of biodiversity.
 
-Adler and Mosquera \cite{adler2000space} demonstrated that, if the competition between two species is determined by a step function with infinite gradient when traits are the same, then the species richness, the number of species present in the community, is maximised in their model. They then used numerical simulations of their model to show how reducing the degree of competitive asymmetry reduces the number of species that can coexist on the trade-off. Similarly, Kisdi  \cite{kisdi1999evolutionary} showed that the gradient of the competition function at the point where two competing individuals have the same trait value (i.e. the same size), is critical in determining the number of species that may evolve in the long term. In other words, coexistence and the evolution of a large community seem to be more likely if a small change in fecundity translates into a large change in competitive ability.
+\cite{adler2000space} demonstrated that, if the competition between two species is determined by a step function with infinite gradient when traits are the same, then the species richness, the number of species present in the community, is maximised in their model. They then used numerical simulations of their model to show how reducing the degree of competitive asymmetry reduces the number of species that can coexist on the trade-off. Similarly,  \cite{kisdi1999evolutionary} showed that the gradient of the competition function at the point where two competing individuals have the same trait value (i.e. the same size), is critical in determining the number of species that may evolve in the long term. In other words, coexistence and the evolution of a large community seem to be more likely if a small change in fecundity translates into a large change in competitive ability.
 
 Here we build on this  previous work and analyse a model with a single trade-off between competitive ability and fecundity. We will find conditions required for two species to coexist, and demonstrate that while no more than two species can coexist when competition is a linear function of the trait value, if the mechanisms of the competition between species allows for a discontinuity in the competition function, then coexistence of any number of distinct species is possible. We also demonstrate analytically for two species that this discontinuous competition gives an upper bound on the likelihood of coexistence when compared with two convex-concave functions that tend to the step function as parameters are altered. Niche theory suggests that as species become more similar coexistence should become more unlikely, but few studies have quantitatively investigated this in the context of life-history trade-offs. Using rigorous proofs we will show that competitive asymmetry and the gradient of the competition function at the origin are important in determining the number of species able to persist on one trade-off, but also show that even under the most favourable conditions, large numbers of species coexisting on one trade-off is very unlikely.
  
@@ -60,7 +63,7 @@ As $\Theta$ tends to zero, these two functions both tend to a step function, tha
  \end{equation}
 and is used as the discontinuous competition function throughout this study (see also \cite{tilman1994competition, may1994superinfection}).
  
-Our model is similar to those studied by Law et al \cite{law1997evolution} and Kisdi \cite{kisdi1999evolutionary}, although both of their models only considered a concave-convex competition function in lieu of the linear and discontinuous functions considered for large $n$ here. The function $c_{k,\nu}(z) =  c(1-1/(\nu+e^{kz}))$ used by Kisdi, of which \eqref{kisdimodified} is a modified version tends to a discontinuous step function of the type studied here as $\theta = 1/k$ tends to zero ($\nu>0$ fixed). The use of simplified competition functions in this study allows for more analytical work than the more complex functions used in Kisdi's analysis. We demonstrate in the two species case that our results for the discontinuous competition function are similar to those produced using the competition kernel given by \eqref{kisdimodified} when $\theta$ is small, and hence allow for comparison with Kisdi's competition model which shows qualitatively similar results for two species coexistence with linear growth.
+Our model is similar to those studied by \cite{law1997evolution} and \cite{kisdi1999evolutionary}, although both of their models only considered a concave-convex competition function in lieu of the linear and discontinuous functions considered for large $n$ here. The function $c_{k,\nu}(z) =  c(1-1/(\nu+e^{kz}))$ used by Kisdi, of which \eqref{kisdimodified} is a modified version tends to a discontinuous step function of the type studied here as $\theta = 1/k$ tends to zero ($\nu>0$ fixed). The use of simplified competition functions in this study allows for more analytical work than the more complex functions used in Kisdi's analysis. We demonstrate in the two species case that our results for the discontinuous competition function are similar to those produced using the competition kernel given by \eqref{kisdimodified} when $\theta$ is small, and hence allow for comparison with Kisdi's competition model which shows qualitatively similar results for two species coexistence with linear growth.
 
 When $\epsilon=1$, our model with a step function $c(z)$ takes the same form as the spatially implicit model presented by Klausmeier \cite{klausmeier1998extinction}, which also demonstrates that coexistence is possible for general $n$. However, this current study builds upon this work to indicate both the likelihood of this coexistence, and the effects of weakened asymmetry in competition.
 
@@ -125,7 +128,7 @@ then the area of coexistence can be found by
 \label{areacoexist}
 2\left( \int^{z^*}_0 dz \frac{1-z-c(z)}{1-c(z)} - \int^{\hat{z}}_0 dz \frac{(1-z)c(-z)-1}{c(-z)-1} \right)
 \end{equation}
-where the factor of 2 is to include the other ordering of traits. It is relatively simple to show that with these assumptions, coupled with the fact that $c(-z)+c(z)=2$, coexistence is only possible if $c'(0)<-1$ (Appendix A). This is in accordance with the work of Adler and Mosquera, who state that monoculture will prevail when the steepness of the competition curve has magnitude less than 1.
+where the factor of 2 is to include the other ordering of traits. It is relatively simple to show that with these assumptions, coupled with the fact that $c(-z)+c(z)=2$, coexistence is only possible if $c'(0)<-1$ (Appendix~\ref{appendix1a}). This is in accordance with the work of Adler and Mosquera, who state that monoculture will prevail when the steepness of the competition curve has magnitude less than 1.
 
 As an example, we use the modified version of the function used by Kisdi \cite{kisdi1999evolutionary} given by \eqref{kisdimodified}, scaled such that the intraspecific competition coefficients are unity, and the parameter $\epsilon$ measured the greatest level of dominance possible, so $c(z) \in [1-\epsilon,1+\epsilon]$ for all $z$.  There is an issue in that $z^*$ and $\hat{z}$ as defined above cannot be found by simply rearranging these equations. However, as demonstrated in Figure~\ref{kisdipic}, when we numerically find the area of the region of coexistence, this area monotonically decreases as the parameter $\Theta$ is increased. The likelihood of coexistence is maximised at $\Theta=0$, where the competition coefficients are determined by a step function. Using Taylor series expansions of the functions $F_1(z)=1-z-c(z)$ and $F_2(z)=(1-z)c(-z)-1$, we can show that the area of coexistence tends to the results presented in Section 3.3 as $\Theta$ approaches 0.
 
@@ -162,7 +165,7 @@ Recall that the model with the step function \eqref{stepc} determining competiti
 \end{equation}
 where $\bar{p}(x_i)=p(x_i)/\rho$ (with $\rho=\max_{0\leq x\leq 1} p(x)$), $\tau=\rho t$, $A_i=\{j:1\leq j\leq n,x_j<x_i\}$ is the set of all species $j$ with a lower trait value than species $i$, and $B_i=\{j:1\leq j\leq n,x_j>x_i\}$ is the set of all species with trait value greater than that of species $i$. Note that either of these sets may be empty. 
 
-For convenience we will now drop the bar on $p$, while remembering that now $p$ has a maximum value scaled to unity. When $\epsilon=0$, we get \textbf{relative size independent, neutral competition,} and because one species has the inherent advantage in that it experiences a higher population growth rate, only one species can exist, as shown in Appendix B.
+For convenience we will now drop the bar on $p$, while remembering that now $p$ has a maximum value scaled to unity. When $\epsilon=0$, we get \textbf{relative size independent, neutral competition,} and because one species has the inherent advantage in that it experiences a higher population growth rate, only one species can exist, as shown in Appendix~\ref{appendix1b}.
 When $\epsilon>0$, however, it is possible for more than one species to persist, as we now show, starting with the two-species case.
 
 If the model given by \eqref{model} and \eqref{stepc} has only two distinct species present, then it is possible for both species to coexist providing there is a globally stable interior equilibrium point. Assuming $x_1>x_2$ for simplicity of notation, and without loss of generality, the model takes the form
@@ -209,13 +212,13 @@ This area is an increasing function in $\epsilon$, meaning that the greater the 
 
  
 \subsubsection{Communities with $n$-species}
-In communities with $n>2$ species present,  any interior fixed point is unique and globally stable. While Nowak and May \cite{nowak1994superinfection} state that this result holds with a modification of the theory in Chapter 21.3 of \cite{hofbauer1998evolutionary}, we include our own proof in Appendix C. 
+In communities with $n>2$ species present,  any interior fixed point is unique and globally stable. While Nowak and May \cite{nowak1994superinfection} state that this result holds with a modification of the theory in Chapter 21.3 of \cite{hofbauer1998evolutionary}, we include our own proof in Appendix~\ref{appendix1c}. 
 
 In order to find the region of trait space that permits an interior fixed point, we consider the model written in the form
 \begin{equation}
 \frac{dN_i}{d\tau}=N_i\left(p_i(x) - \sum_{j=1}^n c_{ij}(x)N_j\right),
 \end{equation}
-where the $c_{ij}(x)$ competition coefficients combine to give the competition matrix $C(x)$. In Appendix D, we show that the volume of coexistence can be calculated from a determinant and is given explicitly by
+where the $c_{ij}(x)$ competition coefficients combine to give the competition matrix $C(x)$. In Appendix~\ref{appendix1d}, we show that the volume of coexistence can be calculated from a determinant and is given explicitly by
 \[
 V_{n}=
 \left\{
@@ -256,8 +259,10 @@ These extensions aside, we have shown here that competitive asymmetry could be v
 
 Thanks to the reviewers for their comments. This work was funded by a Natural Environment Research Council (NERC) studentship to SN.
 
-\section*{Appendix A}
-
+\section*{Appendices}
+\bappendix
+\section{Effect of the slope $c'(0)$ on coexistence}
+\label{appendix1a}
 We note that since $c(z)+c(-z)=2$ constant, we have that $c(-z)-1=1-c(z)>0$for positive $z$. Therefore, we can subtract \eqref{x2lower} from \eqref{x2upper} to get
 \[
 \frac{(1-z-c(z))-((1-z)c(-z)-1)}{c(-z)-1}=\frac{z(c(-z)-1)}{(c(-z)-1)}=z.
@@ -289,7 +294,8 @@ The derivative of the right hand side is given by
 \]
 which is greater than one for all positive $z$. Therefore, this point increases faster than $z$. Noting that the derivative of \eqref{x2upper} is zero when $z=0$, we can therefore conclude that for all $z>0$, this upper bound is indeed non-increasing.
 
-\section*{Appendix B}
+\section{The absence of asymmetry}
+\label{appendix1b}
 Without losing any generality, we can order traits such that $x_1>x_2 > \cdots > x_n$ so that since $p$ is decreasing, $p(x_1)< p(x_2) < \cdots < p(x_n)$. When $\epsilon=0$, equations \eqref{rescaledmodel} become
 \[
 \frac{d N_i}{d\tau}=N_i\left(p(x_i)-\sum_{j=1}^n N_{j}\right), \;\; i=1,\ldots,n.
@@ -315,7 +321,8 @@ N_n(t) = \frac{N_n(0) e^{p(x_n)t}}{1+N_n(0)\sum_{i=1}^n \left( \frac{e^{p(x_i)t}
 \]
 We have thus shown that the species with minimum trait $0$ will send any other species to extinction.
 
-\section*{Appendix C}
+\section{Global Stability of interior fixed points}
+\label{appendix1c}
 \begin{lem}Whenever an interior fixed point exists for the $n$-species model given by \eqref{rescaledmodel}, it is both unique and globally asymptotically stable relative to the interior of the region of space where all $N_i$ are positive, and therefore the system displays permanence.\end{lem}
 \begin{proof} It is well known that when \eqref{model} admits an interior steady state, it is globally stable (also known as LV-stable) if the  matrix $-C=((-c_{ij}(x)))$ is dissipative, that is, there exists a positive diagonal matrix $D$ such that the real symmetric matrix $D(-C)+(-C)^TD$ is negative definite, and therefore has only negative eigenvalues (e.g. \cite{hofandsig}). For the model with discontinuous competition,  the competition matrix takes the form (in the region $x_1>x_2>\cdots > x_n$) given by equation (\ref{constant_C}). 
 Let $D$ be a positive diagonal matrix with diagonal entries $\theta_i$ ($i=1,\ldots,n$).
@@ -409,7 +416,8 @@ $$\left( (1-\epsilon)^2\theta_i-(1+\epsilon)^2\theta_j\right)<0.$$
 Therefore, all the leading principal minors are positive, meaning that $A=DC+C^TD$ is positive definite. Therefore $D(-C)+(-C)^TD$ is negative definite, as required for global stability. Global stability immediately implies permanence. \begin{flushright} $\square$ \end{flushright}
  \end{proof}
  
- \section*{Appendix D}
+ \section{Size of the coexistence region}
+ \label{appendix1d}
 Here we calculate the probability of coexistence for an $n$ species version of \eqref{rescaledmodel}. Since we are using the step function \eqref{stepc}, the matrix $C(x)$ is piecewise constant. At the interior fixed point the bracketed terms are equal to zero, which therefore reduces the model to
 $
 \mathbf{p}(x)=C(x)\mathbf{N},
@@ -421,7 +429,7 @@ We are interested in the volume of $x$-space for which $\mathbf{N}=C^{-1}(x)\mat
 \begin{equation}
 C^{-1}\mathbf{p} = \mathbf{0}. \label{planes1}
 \end{equation}
-Equation \eqref{planes1} defines a series of planes in $p-$space that all pass through the origin. When an ordering $p_n>p_{n-1}>\dots>p_1$ is assumed without any loss of generality, these planes form an $n$ dimensional pyramid when intersected with the unit cube. The volume of this pyramid is then the probability of the $n$ species model permitting an interior fixed point, and therefore the probability of all $n$ species coexisting due to the stability result in Appendix C.
+Equation \eqref{planes1} defines a series of planes in $p-$space that all pass through the origin. When an ordering $p_n>p_{n-1}>\dots>p_1$ is assumed without any loss of generality, these planes form an $n$ dimensional pyramid when intersected with the unit cube. The volume of this pyramid is then the probability of the $n$ species model permitting an interior fixed point, and therefore the probability of all $n$ species coexisting due to the stability result in Appendix~\ref{appendix1c}.
 
 With the ordering $p_1<p_2<\dots<p_n$, equivalent to $x_1>x_2>\dots>x_n$, the competition matrix $C$ takes the form
 \begin{equation}
@@ -499,8 +507,4 @@ V_{n}=
 \]   
 \end{proof}
 
-% \section*{References}
-%\begin{thebibliography}{99}
-\bibliographystyle{plos}
-\bibliography{Papers.bib}
-%\end{thebibliography}
+\eappendix
